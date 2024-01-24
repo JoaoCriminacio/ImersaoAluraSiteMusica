@@ -19,7 +19,7 @@ body{
 
 .sidebar__navigation .logo{
     background-color: #121212;
-    display: flex;
+    display: flex; /* deve ser colocado no elemento pai - os herdeiros dos filhos não ficam como flex */
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
@@ -91,9 +91,9 @@ body{
 
 .section-playlist{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap:20px; /* colocar o mesmo espaço nos elementos que estão justificados */
+    align-items: flex-start; /* alinhamento dos elementos no eixo y (vertical) */
+    justify-content: space-between; /* alinhamento dos elementos no eixo x (horizontal) */
+    gap:20px; /* colocar o mesmo espaçamento nos elementos que estão justificados */
     background-color: #242424;
     color: #b3b3b3;
     font-weight: 600;
@@ -105,7 +105,7 @@ body{
 
 .section-playlist .section-playlist__content{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* definir o eixo principal dos elementos (horizontal ou vertical) */
 }
 
 .section-playlist__content .text{

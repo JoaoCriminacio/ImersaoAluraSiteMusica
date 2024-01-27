@@ -138,9 +138,9 @@
 /* FIM SCROLL */
 
 .offer__list-item {
-    display: grid; /* dividir o código em grids */
+    display: grid; /* dividir o código em grades */
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* separar em 5 colunas */
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px;
